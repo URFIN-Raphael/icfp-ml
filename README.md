@@ -40,7 +40,7 @@
 
 [Module 2b - Automatic differentiation](https://dataflowr.github.io/website/modules/2b-automatic-differentiation/)
 
-## 3. Optimization for machine learning
+## 3. Optimization for machine learning (30/01)
 
 - gradient descent
 - SGD
@@ -55,7 +55,7 @@
 
 - Heavy Ball Method: https://github.com/mlelarge/icfp-ml/blob/main/HeavyBall_empty.ipynb
 
-## ${\textsf{\color{lightgrey} 4. Kernels}}$
+## 4. Kernels (06/02)
 
 - Local averaging methods
     - partitions estimators
@@ -68,7 +68,7 @@
 ### practicals
 - Kernel with [random Fourier features](https://github.com/mlelarge/icfp-ml/blob/main/03_kernel_random_fourier_empty.ipynb)
 
-## ${\textsf{\color{lightgrey} 5. Unsupervised Learning }}$
+## 5. Unsupervised Learning (13/02)
 
 - K-means clustering
 - Mixtures of Gaussian
