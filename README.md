@@ -47,7 +47,7 @@
 - over-parameterized models:https://hackmd.io/@mlelarge/S1y5bEAhj
 
 ### Ref: 
-- In Chapter 5 (Sections 5.2.1 and 5.4) of [Learning Theory from First Principles](https://www.di.ens.fr/~fbach/ltfp_book.pdf)  by Francis Bach
+- In Chapter 5 (Sections 5.2.1 and 5.4) of [Learning Theory from First Principles](https://www.di.ens.fr/~fbach/ltfp_book.pdf) by Francis Bach
 
 
 ### practicals
@@ -65,6 +65,9 @@
     - representer theorem
     - kernel trick
 
+### Ref: 
+- Chapters 6 and 7 of [Learning Theory from First Principles](https://www.di.ens.fr/~fbach/ltfp_book.pdf) by Francis Bach
+
 ### practicals
 - Kernel with [random Fourier features](https://github.com/mlelarge/icfp-ml/blob/main/03_kernel_random_fourier_empty.ipynb)
 
@@ -74,14 +77,21 @@
 - Mixtures of Gaussian
 - Expectation-Maximization for GMM
 
+### Ref:
+- [Expectation-Maximization for the Gaussian Mixture Model](https://perso.telecom-paristech.fr/bonald/documents/gmm.pdf) by Thomas Bonald
+- [The Expectation Maximization Algorithm - A short tutorial](https://www.seanborman.com/publications/EM_algorithm.pdf) by Sean Borman
+
 ### practicals
 - SVD
 - [Eigenfaces](https://github.com/mlelarge/icfp-ml/blob/main/02_SVD_Eigenfaces_empty.ipynb)
 
-## ${\textsf{\color{lightgrey} 6. Bayesian and Variational Inference }}$
+## 6. Bayesian and Variational Inference (20/02 06-13/03)
 
 - Gaussian
 - Linear regression
 - Logistic regression
 - Laplace method
 - Variational inference
+
+  ### Ref:
+  - Chapters 2.3 - 3.3 - 4.4 - 4.5 - 10 [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) by Christopher Bishop
