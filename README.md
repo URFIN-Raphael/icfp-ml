@@ -93,5 +93,10 @@
 - Laplace method
 - Variational inference
 
-  ### Ref:
-  - Chapters 2.3 - 3.3 - 4.4 - 4.5 - 10 [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) by Christopher Bishop
+### Ref:
+- Chapters 2.3 - 3.3 - 4.4 - 4.5 - 10 [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) by Christopher Bishop
+ 
+## 7. Deep generative models: flows and diffusions (20/03)
+
+- [Normalizing flows](https://dataflowr.github.io/website/modules/9c-flows/)
+- [Denoising Diffusion Probabilistic Models](https://dataflowr.github.io/website/modules/18a-diffusion/)
