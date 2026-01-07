@@ -5,9 +5,14 @@
 - Basic Calculus, Linear Algebra
 - Basic Probability and Statistics
 
-![](images/planning.png)
+**Logistic**:
+- course: [Marc Lelarge](https://www.di.ens.fr/~lelarge/)
+- practicals: Leonardo Defilippis and [Raphaël Urfin](https://urfin-raphael.github.io/)
+- Thursday 14h-17h30
+- Room 14-24 305 from 15/01/2026 to 19/02/2026 except 12/02 54-55 205
 
-## 1. Fundamentals of predictions and supervised learning (16/01)
+## Tentative Schedule:
+## 1. Fundamentals of predictions and supervised learning 
 
 ### Fundamentals of predictions
 - Minimizing errors
@@ -34,13 +39,13 @@
 ### practicals
 - Naive Bayes and logistic regression: https://github.com/mlelarge/icfp-ml/blob/main/01_NaivesBayes_Logistic_empty.ipynb
 
-## 2. Pytorch basics and autodiff (23/01)
+## 2. Pytorch basics and autodiff 
 
 [Module 2a - Pytorch tensors](https://dataflowr.github.io/website/modules/2a-pytorch-tensors/)
 
 [Module 2b - Automatic differentiation](https://dataflowr.github.io/website/modules/2b-automatic-differentiation/)
 
-## 3. Optimization for machine learning (30/01)
+## 3. Optimization for machine learning 
 
 - gradient descent
 - SGD
@@ -55,7 +60,7 @@
 
 - Heavy Ball Method: https://github.com/mlelarge/icfp-ml/blob/main/HeavyBall_empty.ipynb
 
-## 4. Kernels (06/02)
+## 4. Kernels 
 
 - Local averaging methods
     - partitions estimators
@@ -71,7 +76,7 @@
 ### practicals
 - Kernel with [random Fourier features](https://github.com/mlelarge/icfp-ml/blob/main/03_kernel_random_fourier_empty.ipynb)
 
-## 5. Unsupervised Learning (13/02)
+## 5. Unsupervised Learning 
 
 - K-means clustering
 - Mixtures of Gaussian
@@ -85,7 +90,7 @@
 - SVD
 - [Eigenfaces](https://github.com/mlelarge/icfp-ml/blob/main/02_SVD_Eigenfaces_empty.ipynb)
 
-## 6. Bayesian and Variational Inference (20/02 06-13/03)
+## 6. Bayesian and Variational Inference 
 
 - Gaussian
 - Linear regression
@@ -96,7 +101,7 @@
 ### Ref:
 - Chapters 2.3 - 3.3 - 4.4 - 4.5 - 10 [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) by Christopher Bishop
  
-## 7. Deep generative models: flows and diffusions (20/03)
+## 7. Deep generative models: flows and diffusions 
 
 - [Normalizing flows](https://dataflowr.github.io/website/modules/9c-flows/)
 - [Denoising Diffusion Probabilistic Models](https://dataflowr.github.io/website/modules/18a-diffusion/)
