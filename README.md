@@ -10,6 +10,7 @@
 - practicals: Leonardo Defilippis and [Raphaël Urfin](https://urfin-raphael.github.io/)
 - Thursday 14h-17h30
 - Room 14-24 305 from 15/01/2026 to 19/02/2026 except 12/02 54-55 205
+- To validate the course, you need to register on [Moodle](https://moodle.psl.eu/course/view.php?id=35560)
 
 ## Tentative Schedule:
 ## 1. Fundamentals of predictions and supervised learning 
