@@ -1,0 +1,38 @@
+site_name: Machine Learning - Master ICFP
+site_description: Machine Learning course for Master ICFP at ENS
+site_author: Marc Lelarge
+site_url: https://mlelarge.github.io/icfp-ml/
+
+repo_name: mlelarge/icfp-ml
+repo_url: https://github.com/mlelarge/icfp-ml
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+docs_dir: notes
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - 1. Predictions: 1_predictions.md
