@@ -95,7 +95,7 @@ Finally, given two points on the ROC curve $(\text{FPR}(\eta_1),\text{TPR}(\eta_
 ## 1.3 Example
 
 **Figure 1:** Statistical model: Gaussian mixture with class 0 in blue and class 1 in orange
-![Gaussian Mixture](../images/GM.png)
+![Gaussian Mixture](images/GM.png)
 
 **Figure 2:** ROC curve associated to the Gaussian Mixture above
-![ROC curve](../images/ROC_GM.png)
+![ROC curve](images/ROC_GM.png)

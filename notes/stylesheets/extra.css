@@ -1,0 +1,9 @@
+.md-typeset .admonition-title::before,
+.md-typeset details summary::before {
+  display: none !important;
+}
+
+.md-typeset .admonition-title,
+.md-typeset details summary {
+  padding-left: 0.6rem;
+}

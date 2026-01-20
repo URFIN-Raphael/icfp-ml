@@ -16,13 +16,6 @@ theme:
     - scheme: default
       primary: indigo
       accent: indigo
-  icon:
-    admonition:
-      info: " "
-      abstract: " "
-      tip: " "
-      success: " "
-      note: " "
 
 docs_dir: notes
 
@@ -37,6 +30,9 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
