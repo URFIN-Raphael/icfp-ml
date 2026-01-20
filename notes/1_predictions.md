@@ -99,3 +99,8 @@ Finally, given two points on the ROC curve $(\text{FPR}(\eta_1),\text{TPR}(\eta_
 
 **Figure 2:** ROC curve associated to the Gaussian Mixture above
 ![ROC curve](images/ROC_GM.png)
+
+
+## 1.4 Ref
+
+- [Fundamentals of prediction](https://mlstory.org/prediction.html) from Patterns, Predictions, and Actions (A story about machine learning) by Moritz Hardt and Benjamin Recht
