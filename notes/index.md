@@ -18,7 +18,7 @@ Welcome to the Machine Learning course for [Master ICFP](https://www.phys.ens.fr
 
 ## Course Materials
 
-1. [Predictions with a statistical model](1_predictions.md)
+1. [Predictions with a statistical model](1_predictions.md) (15/01)
 
 ## References
 
