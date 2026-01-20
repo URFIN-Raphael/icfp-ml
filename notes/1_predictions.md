@@ -18,33 +18,39 @@ The **loss function** generalizes the natural notion of error: $\text{loss}(\hat
 
 Ex: prediction error $\text{loss}(\hat{y},y) = \mathbf{1}(\hat{y}\neq y)$.
 
-**Definition:** The **risk** of a predictor $\hat{y}$ is the expected loss:
+!!! info "Definition: Risk"
+    The **risk** of a predictor $\hat{y}$ is the expected loss:
 
-$$R(\hat{y}) = \mathbb{E}[\text{loss}(\hat{y}(X),Y)] = \sum_{x,y} p(x,y) \text{loss}(\hat{y}(x),y).$$
+    $$R(\hat{y}) = \mathbb{E}[\text{loss}(\hat{y}(X),Y)] = \sum_{x,y} p(x,y) \text{loss}(\hat{y}(x),y).$$
 
-**Lemma:** The predictor minimizing the risk is given by:
+!!! abstract "Lemma: Optimal predictor"
+    The predictor minimizing the risk is given by:
 
-$$\hat{y}(x) = \mathbf{1}\left( p(1|x) \geq \frac{\text{loss}(1,0)-\text{loss}(0,0)}{\text{loss}(0,1)-\text{loss}(1,1)}p(0|x)\right).$$
+    $$\hat{y}(x) = \mathbf{1}\left( p(1|x) \geq \frac{\text{loss}(1,0)-\text{loss}(0,0)}{\text{loss}(0,1)-\text{loss}(1,1)}p(0|x)\right).$$
 
-**Proof:** Since
+??? note "Proof"
+    Since
 
-$$R(\hat{y}) =  \sum_{x} p(x) \mathbb{E}\left[ \text{loss}(\hat{y}(x),Y)|X=x\right],$$
+    $$R(\hat{y}) =  \sum_{x} p(x) \mathbb{E}\left[ \text{loss}(\hat{y}(x),Y)|X=x\right],$$
 
-we just need to compare the two terms:
+    we just need to compare the two terms:
 
-$$\mathbb{E}\left[ \text{loss}(0,Y)|X=x\right] = \text{loss}(0,0)p(0|x) + \text{loss}(0,1)p(1|x)$$
+    $$\mathbb{E}\left[ \text{loss}(0,Y)|X=x\right] = \text{loss}(0,0)p(0|x) + \text{loss}(0,1)p(1|x)$$
 
-$$\mathbb{E}\left[ \text{loss}(1,Y)|X=x\right] = \text{loss}(1,0)p(0|x) + \text{loss}(1,1)p(1|x)$$
+    $$\mathbb{E}\left[ \text{loss}(1,Y)|X=x\right] = \text{loss}(1,0)p(0|x) + \text{loss}(1,1)p(1|x)$$
 
-**Remark:** In the case where $\text{loss}(0,0)=\text{loss}(1,1)=0$ and $\text{loss}(0,1)=\text{loss}(1,0)=1$, the optimal predictor is given by $\hat{y}(x) = \arg\max_{y\in \{0,1\}} p(y|x)$, which is the maximum a posteriori (MAP) rule.
+!!! tip "Remark"
+    In the case where $\text{loss}(0,0)=\text{loss}(1,1)=0$ and $\text{loss}(0,1)=\text{loss}(1,0)=1$, the optimal predictor is given by $\hat{y}(x) = \arg\max_{y\in \{0,1\}} p(y|x)$, which is the maximum a posteriori (MAP) rule.
 
 Since our generative model is typically described with $p(x|y)$, we can rewrite the optimal predictor with Bayes rule:
 
 $$\hat{y}(x) = \mathbf{1}\left( \frac{p(x|1)}{p(x|0)} \geq \frac{p_0\left(\text{loss}(1,0)-\text{loss}(0,0)\right)}{p_1\left(\text{loss}(0,1)-\text{loss}(1,1)\right)}\right).$$
 
-**Definition:** The likelihood ratio is defined as: $\mathcal{L}(x) = \frac{p(x|1)}{p(x|0)}$ and a likelihood ratio test is a test of the form: $\hat{y}(x) = \mathbf{1}\left( \mathcal{L}(x) \geq \eta \right)$ for some $\eta>0$.
+!!! info "Definition: Likelihood ratio"
+    The likelihood ratio is defined as: $\mathcal{L}(x) = \frac{p(x|1)}{p(x|0)}$ and a likelihood ratio test is a test of the form: $\hat{y}(x) = \mathbf{1}\left( \mathcal{L}(x) \geq \eta \right)$ for some $\eta>0$.
 
-**Remark:** In the case where $\text{loss}(0,0)=\text{loss}(1,1)=0$ and $\text{loss}(0,1)=\text{loss}(1,0)=1$, and $p_0=p_1$, the MAP rule reduces to: $\hat{y}(x) = \mathbf{1}\left( \mathcal{L}(x) \geq 1 \right) = \arg\max_{y\in \{0,1\}} p(x|y)$, which is the maximum likelihood (ML) rule.
+!!! tip "Remark"
+    In the case where $\text{loss}(0,0)=\text{loss}(1,1)=0$ and $\text{loss}(0,1)=\text{loss}(1,0)=1$, and $p_0=p_1$, the MAP rule reduces to: $\hat{y}(x) = \mathbf{1}\left( \mathcal{L}(x) \geq 1 \right) = \arg\max_{y\in \{0,1\}} p(x|y)$, which is the maximum likelihood (ML) rule.
 
 ## 1.2 Confusion matrix and ROC curve
 
@@ -83,12 +89,13 @@ Setting $\eta=0$ or $\eta=\infty$ corresponds to the two extreme points of the R
 
 Finally, given two points on the ROC curve $(\text{FPR}(\eta_1),\text{TPR}(\eta_1))$ and $(\text{FPR}(\eta_2),\text{TPR}(\eta_2))$, the point $(t\text{FPR}(\eta_1)+(1-t)\text{FPR}(\eta_2),t\text{TPR}(\eta_1)+(1-t)\text{FPR}(\eta_2))$ is obtained by the random (suboptimal) predictor equal to $\mathbf{1}\left( \mathcal{L}(x) \geq \eta_1\right)$ with probability $t$ and to $\mathbf{1}\left( \mathcal{L}(x) \geq \eta_2\right)$ with probability $1-t$. Hence the ROC curve is concave.
 
-**Proposition:** The points $(0,0)$ and $(1,1)$ are always on the ROC curve. The ROC curve is always above the diagonal and is concave.
+!!! success "Proposition: ROC curve properties"
+    The points $(0,0)$ and $(1,1)$ are always on the ROC curve. The ROC curve is always above the diagonal and is concave.
 
 ## 1.3 Example
 
-**Figure 1:** Statistical model: Gaussian mixture with class 0 in blue and class 1 in orange  
+**Figure 1:** Statistical model: Gaussian mixture with class 0 in blue and class 1 in orange
 ![Gaussian Mixture](../images/GM.png)
 
-**Figure 2:** ROC curve associated to the Gaussian Mixture above  
+**Figure 2:** ROC curve associated to the Gaussian Mixture above
 ![ROC curve](../images/ROC_GM.png)
