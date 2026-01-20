@@ -6,13 +6,13 @@ In machine learning, we have a **population** of $N$ instances $(x_i,y_i)_{i=1}^
 
 **Modeling knowledge** as a probability distribution with a statistical model $p(x,y)$.
 
-Prior for $Y$: $p(y)$ in our case: $p_0= \mathbb{P}(Y=0)$ and $p_1=1-p_0$.
-
 Generative model: $p(x|y)$. So that $p(x,y) = p(x|y)p(y)$.
 
 We restrict ourselves to binary prediction, i.e. the target $Y\in \{0,1\}$.
 
-We denote by $\hat{y}(X)$ the predictor for input $X$. For classification, we ask for $\hat{y}:\mathbb{R}\to \{0,1\}$.
+So that the **prior** for $Y$: $p(y)$ in our case: $p_0= \mathbb{P}(Y=0)$ and $p_1=1-p_0$.
+
+We denote by $\hat{y}(X)$ the predictor for input $X\in \mathcal{X}$. For classification, we ask for $\hat{y}:\mathcal{X}\to \{0,1\}$. In our examples, we will take $\mathcal{X} = \mathbb{R}$.
 
 The **loss function** generalizes the natural notion of error: $\text{loss}(\hat{y},y)\in \mathbb{R}$.
 
@@ -42,7 +42,7 @@ Ex: prediction error $\text{loss}(\hat{y},y) = \mathbf{1}(\hat{y}\neq y)$.
 !!! tip "Remark"
     In the case where $\text{loss}(0,0)=\text{loss}(1,1)=0$ and $\text{loss}(0,1)=\text{loss}(1,0)=1$, the optimal predictor is given by $\hat{y}(x) = \arg\max_{y\in \{0,1\}} p(y|x)$, which is the maximum a posteriori (MAP) rule.
 
-Since our generative model is typically described with $p(x|y)$, we can rewrite the optimal predictor with Bayes rule:
+Since our generative model is typically described with $p(x|y)$, we can rewrite the optimal predictor with Bayes rule (here $p(1|x) = \frac{p(x|1)p_1}{p(x)}$ and $p(0|x) = \frac{p(x|0)p_0}{p(x)}$):
 
 $$\hat{y}(x) = \mathbf{1}\left( \frac{p(x|1)}{p(x|0)} \geq \frac{p_0\left(\text{loss}(1,0)-\text{loss}(0,0)\right)}{p_1\left(\text{loss}(0,1)-\text{loss}(1,1)\right)}\right).$$
 
