@@ -13,6 +13,9 @@
 - To validate the course, you need to register on [Moodle](https://moodle.psl.eu/course/view.php?id=35560)
 
 ## Tentative Schedule:
+
+## [Overview of the course](https://docs.google.com/presentation/d/1RldOa8G113G40RBTLydIm2lUasO3vJkMEGXcbMLc898/edit?usp=sharing)
+
 ## 1. [Fundamentals of predictions and supervised learning](https://mlelarge.github.io/icfp-ml/1_predictions/)
 
 ### Fundamentals of predictions
